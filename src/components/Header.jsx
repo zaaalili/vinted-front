@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import logo from "../assets/vinted-logo.png";
 import { IoSearch } from "react-icons/io5";
 
-// Le composant link a besoin d'une props "to" pour savoir vers quelle page il redirige !
 const Header = () => {
   return (
     <header>

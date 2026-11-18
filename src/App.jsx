@@ -32,7 +32,7 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home offers={data.offers} />} />
           <Route path="/offer" element={<Offer />} />
         </Routes>
       </Router>
