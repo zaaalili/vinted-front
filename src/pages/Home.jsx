@@ -5,7 +5,7 @@ const Home = ({ offers }) => {
     <>
       <main>
         <div className="container">
-          <main>
+          <section>
             {/* <h1>Home Page</h1> */}
             {offers.map((offer) => {
               console.log(offers);
@@ -15,19 +15,23 @@ const Home = ({ offers }) => {
                     <img src={offer.owner.account.avatar.secure_url} alt="" />
                     <span>{offer.owner.account.username}</span>
                   </div>
-                  <img src={offer.product_image.secure_url} alt=""></img>
                   <div className="product-infos">
+                    <img src={offer.product_image.secure_url} alt=""></img>
                     <span>{offer.product_price} €</span>
-                    <span>{offer.product_details.TAILLE}</span>
-                    <span>{offer.product_details.MARQUE}</span>
+                    {offer.product_details.map((element) => {
+                      return element.TAILLE && <span>{element.TAILLE}</span>;
+                    })}
+                    {offer.product_details.map((element) => {
+                      return element.MARQUE && <span>{element.MARQUE}</span>;
+                    })}
                   </div>
                 </article>
               );
             })}
-            <button>
-              <Link to="/offer">Voir toutes les offres</Link>
-            </button>
-          </main>
+          </section>
+          {/* <button>
+            <Link to="/offer">Voir toutes les offres</Link>
+          </button> */}
         </div>
       </main>
     </>
