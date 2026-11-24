@@ -1,0 +1,47 @@
+/* ======================================================================= */
+/* ================================== HOME =============================== */
+/* ======================================================================= */
+
+.home {
+  background-color: white;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+
+/* article {
+  width: 256px;
+} */
+
+.owner-infos {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.owner-infos img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.product-infos {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-infos img {
+  height: 360px;
+  width: 235px;
+  object-fit: cover;
+}
+/* changer la taille img vers article ! */
+
+main .container > button {
+  display: block;
+  margin: 30px auto;
+}

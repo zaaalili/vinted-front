@@ -1,0 +1,21 @@
+main .offer {
+  background-color: #ebedee;
+}
+
+main .container {
+  display: flex;
+  gap: 120px;
+}
+
+aside {
+  width: 400px;
+  height: 600px;
+  background-color: white;
+}
+
+.owner-infos img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+}

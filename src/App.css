@@ -2,6 +2,10 @@
 /* =============================== GLOBALS =============================== */
 /* ======================================================================= */
 
+:root {
+  --primary-blue: #007782;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -15,6 +19,7 @@ header {
   background-color: white;
   height: 50px;
   border-bottom: 1px solid #d3d3d3;
+  /* margin-bottom: 40px; */
 }
 
 header .container {
@@ -28,44 +33,5 @@ header img {
 }
 
 /* ======================================================================= */
-/* ================================== HOME =============================== */
+/* ================================= OFFER =============================== */
 /* ======================================================================= */
-
-section {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 26px;
-}
-
-/* article {
-  width: 256px;
-} */
-
-.owner-infos {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.owner-infos img {
-  width: 25px;
-  height: 25px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-.product-infos {
-  display: flex;
-  flex-direction: column;
-}
-
-.product-infos img {
-  height: 360px;
-  width: 235px;
-  object-fit: cover;
-}
-
-main .container > button {
-  display: block;
-  margin: 30px auto;
-}
